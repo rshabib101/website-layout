@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 2px solid greenyellow;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1{
+            font-size: 10vw;
+        }
+        .tiger img{
+            width: 100%;
+            
+        }
+        .container-two{
+            display: flex;
+        }
+        .container-two .split{
+            width: 50%;
+        }
+        .split img{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container-two{
+                flex-direction: column;
+            }
+            .container-two .split{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>My rsponsive website</h1>
+
+    <section class="tiger">
+        <h3>Tiger</h3>
+        <img src="images/tiger1.jpg" alt="">
+    </section>
+
+    <section>
+        <h2>two parts</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="images/food.jpg" alt="">
+            </div>
+            <div class="split">
+                <img src="images/tiger1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
